@@ -11,6 +11,7 @@ const servoNumber1 = robotbit.Servos.S1
 // setup
 basic.showIcon(IconNames.Happy)
 
+//turns the servo to 0 degrees
 input.onButtonPressed(Button.A, function () {
     robotbit.Servo(servoNumber1, 0)
     basic.clearScreen()
@@ -20,6 +21,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Happy)
 })
 
+//turns the servo to 180 degrees
 input.onButtonPressed(Button.B, function () {
     robotbit.Servo(servoNumber1, 180)
     basic.clearScreen()
